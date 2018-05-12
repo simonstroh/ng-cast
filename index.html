@@ -24,5 +24,23 @@
   <script src="src/components/search.js"></script>
   <script src="src/components/videoListEntry.js"></script>
   <script src="src/components/videoList.js"></script>
+  <script>
+    function makeCircleMove() {
+      if (document.getElementById('toggle-switch').style.left === '15px') {
+        document.getElementById('toggle-background').style.backgroundColor = '#FF0000'
+        document.getElementById('toggle-switch').style.left = '0px'
+      } else {
+        document.getElementById('toggle-switch').style.left = '15px'
+        document.getElementById('toggle-background').style.backgroundColor = '#888888'
+      }
+    }
+    function flipImage() {
+      if (document.getElementById('description-extender').style.transform === 'rotate(180deg)') {
+        document.getElementById('description-extender').style.transform = 'rotate(0deg)'
+      } else {
+        document.getElementById('description-extender').style.transform = 'rotate(180deg)'
+      }
+    }
+  </script>
 </body>
 </html>

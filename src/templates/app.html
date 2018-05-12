@@ -3,6 +3,13 @@
     <div class="col-md-6 col-md-offset-3">
       <search handle-input="$ctrl.handleInputInParent"><h5><em>search</em> component goes here</h5></search>
     </div>
+    <div>
+    <span style="display: block; text-align: center; font-size: 10pt;margin-bottom: 6px">AutoPlay</span>
+    <div id="toggle-background" class="toggle">
+      <div ng-click="$ctrl.changesAutoplay()" onclick="makeCircleMove()" id="toggle-switch" class="circle">
+      </div>
+    </div>
+    </div>
   </nav>
   <div class="row">
     <div class="col-md-7">
