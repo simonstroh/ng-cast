@@ -25,11 +25,11 @@ angular.module('video-player')
 
       this.changesAutoplay = () => {
         if (this.autoplay === 'true') {
-          this.autoplay = 'false'
+          this.autoplay = 'false';
         } else {
-          this.autoplay = 'true'
+          this.autoplay = 'true';
         }
-      }
+      };
 
       this.handleInputInParent = (input) => {
         var prompt = { part: 'snippet', key: window.YOUTUBE_API_KEY, type: 'video', videoEmbeddable: 'true' };
@@ -39,8 +39,8 @@ angular.module('video-player')
 
       this.makeDescriptionCrazy = (videoId) => {
         if (this.detailIsOpen) {
-          this.playerDescription = this.shortDescription
-          this.detailIsOpen = false
+          this.playerDescription = this.shortDescription;
+          this.detailIsOpen = false;
         } else {
           var options = { part: 'snippet', id: videoId, key: window.YOUTUBE_API_KEY };
           youTubeDetails.result(options, this.newCallback);
@@ -65,7 +65,7 @@ angular.module('video-player')
         this.playerDescription = parameter.data.items[0].snippet.description;
       };
       
-      this.handleInputInParent('Space Oddity Chris Hadfield')
+      this.handleInputInParent('Space Oddity Chris Hadfield');
     },
   
     templateUrl: 'src/templates/app.html'

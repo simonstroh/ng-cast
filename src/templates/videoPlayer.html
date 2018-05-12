@@ -4,7 +4,7 @@
   </div>
   <div class="video-player-details">
     <h3>{{ $ctrl.title }}</h3>
-    <div>{{ $ctrl.description }}</div>
+    <div onclick="flipImage()" ng-click="$ctrl.handleInputtyPut($ctrl.id)">{{ $ctrl.description }}</div>
     <button id="description-extender" onclick="flipImage()" ng-click="$ctrl.handleInputtyPut($ctrl.id)"></button>
   </div>
 </div>
