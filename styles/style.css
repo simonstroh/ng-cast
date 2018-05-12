@@ -4,6 +4,21 @@ body {
   background: #f1f1f1;
 }
 
+.video-player-details button {
+  background-image: url('https://www.dropbox.com/s/ge2j06mkaklluon/open.svg?raw=1');
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.video-player-details button:hover {
+  border-bottom: 1px solid black;
+}
+
 .navbar {
   background: #fff;
   margin-bottom: 20px;

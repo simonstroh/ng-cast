@@ -6,7 +6,7 @@
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player url="$ctrl.playerUrl" id="$ctrl.playerId" title="$ctrl.playerTitle" description="$ctrl.playerDescription"><h5><em>videoPlayer</em> component goes here</h5></video-player>
+      <video-player handle-inputty-put="$ctrl.makeDescriptionCrazy" url="$ctrl.playerUrl" id="$ctrl.videoIdForDetails" title="$ctrl.playerTitle" description="$ctrl.playerDescription"><h5><em>videoPlayer</em> component goes here</h5></video-player>
     </div>
     <div class="col-md-5">
       <video-list videos="$ctrl.videoData" video-clicker="$ctrl.handleClickInParent"><h5><em>videoList</em> component goes here</h5></video-list>

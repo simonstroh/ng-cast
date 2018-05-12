@@ -6,7 +6,8 @@ angular.module('video-player')
       url: '<',
       title: '<',
       description: '<',
-      id: '<'
+      id: '<',
+      handleInputtyPut: '<'
     },
     templateUrl: 'src/templates/videoPlayer.html'
   });
