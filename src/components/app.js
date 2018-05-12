@@ -15,7 +15,7 @@ angular.module('video-player')
       this.handleInputInParent = (input) => {
         var prompt = { part: 'snippet', key: window.YOUTUBE_API_KEY, type: 'video', videoEmbeddable: 'true' };
         prompt.q = input;
-        youTube.search(prompt, this.updateData);
+        youTube.result(prompt, this.updateData);
       };
       this.updateData = (data) => {
         this.videoData = data.data.items;

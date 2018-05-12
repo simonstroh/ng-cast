@@ -1,7 +1,7 @@
 angular.module('video-player')
   .service('youTube', function($http) {
   // TODO
-    this.search = (params, callback) => {
+    this.result = function(params, callback) {
       $http({
         method: 'GET',
         url: 'https://www.googleapis.com/youtube/v3/search',
@@ -9,7 +9,7 @@ angular.module('video-player')
       }).then(function(data) {
         callback(data);
       }, function(data) {
-        console.log('That error message though.', params);
+        console.log('That error message though.');
       });
     };
   });
