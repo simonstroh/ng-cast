@@ -1,12 +1,12 @@
 angular.module('video-player')
 
-.component('videoPlayer', {
+  .component('videoPlayer', {
   // TODO
-  bindings: {
-    url: '<',
-    title: '<',
-    description: '<',
-    id: '<'
-  },
-  templateUrl: 'src/templates/videoPlayer.html'
-});
+    bindings: {
+      url: '<',
+      title: '<',
+      description: '<',
+      id: '<'
+    },
+    templateUrl: 'src/templates/videoPlayer.html'
+  });

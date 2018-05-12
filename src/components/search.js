@@ -1,9 +1,9 @@
 angular.module('video-player')
 
-.component('search', {
+  .component('search', {
   // TODO
-  bindings: {
-    handleInput: '<'
-  },
-  templateUrl: 'src/templates/search.html'
-});
+    bindings: {
+      handleInput: '<'
+    },
+    templateUrl: 'src/templates/search.html'
+  });
